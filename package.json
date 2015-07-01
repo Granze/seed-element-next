@@ -11,11 +11,12 @@
     "url": "https://github.com/Granze/polymer-element-es6/issues"
   },
   "scripts": {
-    "start": "npm run serve",
+    "start": "npm run serve -s",
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel my-element.js -w -o dist/my-element.js",
-    "open": "opener http://localhost:9090/components/polymer-element-es6/",
-    "serve": "parallelshell \"npm run babel -s\" \"polyserve -p 9090\" \"npm run open -s\"",
+    "postbabel": "echo 'post'",
+    "open": "opener http://localhost:8080/components/polymer-element-es6/",
+    "serve": "parallelshell \"npm run babel -s\" \"polyserve\" \"npm run open -s\"",
     "postinstall": "bower install"
   },
   "author": "Maurizio Mangione",
