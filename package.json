@@ -1,0 +1,18 @@
+{
+  "name": "polymer-element-es6",
+  "version": "0.1.0",
+  "description": "My ES6 element",
+  "main": "my-element.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel my-element.js -o dist/my-element.js",
+    "serve": "polyserve"
+  },
+  "author": "Maurizio Mangione",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "polyserve": "^0.4.0",
+    "web-component-tester": "*"
+  }
+}

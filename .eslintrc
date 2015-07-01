@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "eqeqeq": [2, "smart"],
+    "space-after-keywords": 2,
+    "no-console": 1
+  }
+}
