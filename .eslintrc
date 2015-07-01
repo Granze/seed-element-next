@@ -9,10 +9,14 @@
     "node": true,
     "mocha": true
   },
+  "globals": {
+    "Polymer": true
+  },
   "rules": {
     "quotes": [2, "single"],
     "eqeqeq": [2, "smart"],
     "space-after-keywords": 2,
-    "no-console": 1
+    "no-console": 1,
+    "no-new": [0]
   }
 }
