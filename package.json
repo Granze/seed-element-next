@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "description": "My ES6 element",
   "main": "my-element.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Granze/polymer-element-es6"
+  },
+  "bugs": {
+    "url": "https://github.com/Granze/polymer-element-es6/issues"
+  },
   "scripts": {
+    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel my-element.js -o dist/my-element.js",
-    "serve": "polyserve"
+    "babel": "babel my-element.js -w -o dist/my-element.js",
+    "open": "opener http://localhost:9090/components/polymer-element-es6/",
+    "serve": "parallelshell \"npm run babel -s\" \"polyserve -p 9090\" \"npm run open -s\"",
+    "postinstall": "bower install"
   },
   "author": "Maurizio Mangione",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.6.14",
+    "eslint": "^0.24.0",
+    "opener": "^1.4.1",
+    "parallelshell": "^1.2.0",
     "polyserve": "^0.4.0",
     "web-component-tester": "*"
   }
