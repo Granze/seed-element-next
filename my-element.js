@@ -6,16 +6,15 @@ class MyElement {
   get is () {
     return 'my-element';
   }
-  
-  created() {};
 
-  ready() {};
+  created() {
+    console.log('element created!');
+  };
 
-  attached() {};
+  ready() {
+    console.log('element ready');
+  };
 
-  detached() {};
-
-  attributeChanged(name, type) {}
 }
 
 new MyElement();
