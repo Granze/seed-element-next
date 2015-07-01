@@ -8,7 +8,12 @@ class MyElement {
   }
 
   created() {
-    console.log('element created!');
+    this.properties = {
+      who: {
+        value: 'World',
+        type: String
+      }
+    }
   };
 
   ready() {
