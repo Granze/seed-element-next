@@ -13,10 +13,11 @@
   "scripts": {
     "start": "npm run serve -s",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel my-element.js -w -o dist/my-element.js",
-    "postbabel": "echo 'post'",
+    "babel": "babel my-element.js -o dist/my-element.js",
+    "babel-watch": "babel my-element.js -w -o dist/my-element.js",
     "open": "opener http://localhost:8080/components/polymer-element-es6/",
-    "serve": "parallelshell \"npm run babel -s\" \"polyserve\" \"npm run open -s\"",
+    "serve": "npm run babel -s && parallelshell \"npm run babel-watch -s\" \"polyserve\" \"npm run open -s\"",
+    "build": "npm run babel -s",
     "postinstall": "bower install"
   },
   "author": "Maurizio Mangione",
