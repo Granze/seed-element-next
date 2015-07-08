@@ -10,16 +10,19 @@
   "bugs": {
     "url": "https://github.com/Granze/polymer-element-es6/issues"
   },
+  "config": {
+    "name": "my-element"
+  },
   "scripts": {
     "start": "npm run serve -s",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel src/*.js -o dist/my-element.js",
-    "babel-watch": "babel src/*.js -w -o dist/my-element.js",
+    "babel": "babel src/*.js -o dist/$npm_package_config_name.js",
+    "babel-watch": "babel src/*.js -w -o dist/$npm_package_config_name.js",
     "open": "opener http://localhost:8080/components/polymer-element-es6/",
     "serve": "npm run babel -s && parallelshell \"npm run babel-watch -s\" \"polyserve\" \"npm run open -s\"",
     "script-path": "replace '../dist/' '' dist/*.html",
     "polymer-path": "replace '../../' '../' dist/*.html",
-    "copy-replace": "cp src/*.html dist/ && npm run script-path && npm run polymer-path",
+    "copy-replace": "cp src/*.html dist/$npm_package_config_name.html && npm run script-path && npm run polymer-path",
     "build": "npm run babel -s && npm run copy-replace",
     "postinstall": "bower install"
   },
