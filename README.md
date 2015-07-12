@@ -1,8 +1,4 @@
-#Polymer Element ES6
-
-[WIP]
-
-Just an experiment for now but, if you want to try it out:
+#Polymer Element ES2015
 
 Install dependencies:
 ```npm i```

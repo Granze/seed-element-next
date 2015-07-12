@@ -1,14 +1,14 @@
 {
-  "name": "polymer-element-es6",
+  "name": "polymer-element-es2015",
   "version": "0.1.0",
-  "description": "My ES6 element",
-  "main": "my-element.html",
+  "description": "Build your Polymer element using ES2015",
+  "main": "scr/my-element.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Granze/polymer-element-es6"
+    "url": "https://github.com/Granze/polymer-element-es2015"
   },
   "bugs": {
-    "url": "https://github.com/Granze/polymer-element-es6/issues"
+    "url": "https://github.com/Granze/polymer-element-es2015/issues"
   },
   "config": {
     "name": "my-element"
@@ -18,7 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel src/*.js -o dist/$npm_package_config_name.js",
     "babel-watch": "babel src/*.js -w -o dist/$npm_package_config_name.js",
-    "open": "opener http://localhost:8080/components/polymer-element-es6/",
+    "open": "opener http://localhost:8080/components/polymer-element-es2015/",
     "serve": "npm run babel -s && parallelshell \"npm run babel-watch -s\" \"polyserve\" \"npm run open -s\"",
     "script-path": "replace '../dist/' '' dist/*.html",
     "polymer-path": "replace '../../' '../' dist/*.html",

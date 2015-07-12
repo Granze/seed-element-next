@@ -1,9 +1,9 @@
 {
-    "name": "polymer-element-es6",
+    "name": "polymer-element-es2015",
     "version": "0.1.0",
-    "description": "My ES6 Component",
+    "description": "Build your Polymer element using ES2015",
     "license": "MIT",
-    "main": "my-component.html",
+    "main": "scr/my-component.html",
     "keywords": [
         "polymer",
         "web-components"
