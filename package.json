@@ -23,7 +23,7 @@
     "script-path": "replace '../dist/' '' dist/*.html",
     "polymer-path": "replace '../../' '../' dist/*.html",
     "copy-replace": "cp src/*.html dist/$npm_package_config_name.html && npm run script-path && npm run polymer-path",
-    "build": "npm run babel -s && npm run copy-replace",
+    "build": "rimraf dist/* && npm run babel -s && npm run copy-replace",
     "postinstall": "bower install"
   },
   "author": "Maurizio Mangione",
@@ -35,6 +35,7 @@
     "parallelshell": "^1.2.0",
     "polyserve": "^0.4.0",
     "replace": "^0.3.0",
+    "rimraf": "^2.4.2",
     "web-component-tester": "*"
   }
 }
