@@ -10,7 +10,7 @@ class MyElement {
   created() {
     this.properties = {
       who: {
-        value: 'World',
+        value: 'ES2015!',
         type: String
       }
     }
