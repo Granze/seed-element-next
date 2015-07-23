@@ -1,22 +1,29 @@
 #Polymer Element ES2015
 > A minimal custom element starter-kit that let you write your elements using [ES2015](http://www.ecma-international.org/ecma-262/6.0/). 
 
+:warning: This is just an experiment right now.
 
 Install dependencies:
-```npm i```
+```bash 
+npm i
+```
 
-Start the server and watch the files
-```npm start```
+Start the server and watch the files (you need [Polyserve](https://github.com/PolymerLabs/polyserve) installed).
+```bash 
+npm start
+```
 
 Build your element
-```npm build```
+```bash 
+npm build
+```
 
 If you want to change the name of the created files, open ```package.json``` and modify the ```name``` property inside the ```config```:
 
 ```json
 "config": {
-    "name": "my-element"
-  }
+  "name": "my-element"
+}
 ```
 
 ## Inspirations
