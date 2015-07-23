@@ -1,18 +1,20 @@
 {
-    "name": "polymer-element-es2015",
-    "version": "0.1.0",
-    "description": "Build your Polymer element using ES2015",
-    "license": "MIT",
-    "main": "scr/my-component.html",
-    "keywords": [
-        "polymer",
-        "web-components"
-    ],
-    "ignore": [
-        "**/.*",
-        "bower_components"
-    ],
-    "dependencies": {
-        "polymer": "Polymer/polymer#^1.0.0"
-    }
+  "name": "polymer-element-es2015",
+  "version": "0.1.0",
+  "description": "Build your Polymer element using ES2015",
+  "license": "MIT",
+  "main": "scr/my-component.html",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "ES6",
+    "ES2015"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
 }
