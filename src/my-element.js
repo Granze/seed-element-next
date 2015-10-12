@@ -1,25 +1,25 @@
-class MyElement {
-  constructor () {
-    Polymer(MyElement.prototype);
-  }
+(function() {
+  'use strict';
 
-  get is () {
-    return 'my-element';
-  }
+  class MyElement {
+    beforeRegistrer() {
+      this.is = 'my-element';
 
-  created() {
-    this.properties = {
-      who: {
-        value: 'ES2015!',
-        type: String
+      this.properties = {
+        who: {
+          value: 'ES2015!',
+          type: String
+        }
       }
     }
-  };
 
-  ready() {
-    console.log('element ready');
-  };
+    ready() {
+      console.log('element ready');
+    };
 
-}
+  }
 
-new MyElement();
+  Polymer(MyElement);
+
+})();
+
