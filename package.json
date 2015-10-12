@@ -14,28 +14,11 @@
     "name": "my-element"
   },
   "scripts": {
-    "start": "npm run serve -s",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel src/*.js -o dist/$npm_package_config_name.js",
-    "babel-watch": "babel src/*.js -w -o dist/$npm_package_config_name.js",
-    "open": "opener http://localhost:8080/components/polymer-element-es2015/",
-    "serve": "npm run babel -s && parallelshell \"npm run babel-watch -s\" \"polyserve\" \"npm run open -s\"",
-    "script-path": "replace '../dist/' '' dist/*.html",
-    "polymer-path": "replace '../../' '../' dist/*.html",
-    "copy-replace": "cp src/*.html dist/$npm_package_config_name.html && npm run script-path && npm run polymer-path",
-    "build": "rimraf dist/* && npm run babel -s && npm run copy-replace",
-    "postinstall": "bower install"
+    "test": "wct"
   },
   "author": "Maurizio Mangione",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^5.6.14",
-    "eslint": "^0.24.0",
-    "opener": "^1.4.1",
-    "parallelshell": "^1.2.0",
-    "polyserve": "^0.4.0",
-    "replace": "^0.3.0",
-    "rimraf": "^2.4.2",
-    "web-component-tester": "*"
+    "babel": "^5.8.23"
   }
 }
