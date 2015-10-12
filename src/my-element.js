@@ -1,6 +1,5 @@
 class MyElement {
   constructor () {
-    Polymer(MyElement.prototype);
   }
 
   get is () {
@@ -13,7 +12,7 @@ class MyElement {
         value: 'ES2015!',
         type: String
       }
-    }
+    };
   };
 
   ready() {
@@ -22,4 +21,6 @@ class MyElement {
 
 }
 
-new MyElement();
+// register this element
+Polymer(MyElement);
+
