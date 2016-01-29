@@ -7,7 +7,8 @@
     "build": "npm run transpile",
     "polyserve": "polyserve",
     "start": "parallelshell \"npm run polyserve\" \"npm run transpile\"",
-    "transpile": "babel --presets \"es2015\" src/seed-element.js -w -o seed-element.js"
+    "transpile": "babel --presets \"es2015\" src/seed-element.js -w -o seed-element.js",
+    "postinstall": "bower install"
   },
   "keywords": [
     "polymer",
