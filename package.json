@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "description": "An element providing a solution to no problem in particular.",
   "main": "index.html",
+  "config": {
+    "name": "seed-element"
+  },
   "scripts": {
     "build": "npm run transpile",
     "polyserve": "polyserve",
     "start": "parallelshell \"npm run polyserve\" \"npm run transpile\"",
-    "transpile": "babel --presets \"es2015\" src/seed-element.js -w -o seed-element.js",
+    "transpile": "babel --presets \"es2015\" src/$npm_package_config_name.js -w -o $npm_package_config_name.js",
     "postinstall": "bower install"
   },
   "keywords": [
