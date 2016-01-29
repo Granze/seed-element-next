@@ -1,0 +1,24 @@
+{
+  "name": "seed-element-es2015",
+  "version": "0.0.1",
+  "description": "An element providing a solution to no problem in particular.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run transpile",
+    "polyserve": "polyserve",
+    "start": "parallelshell \"npm run polyserve\" \"npm run transpile\"",
+    "transpile": "babel --presets \"es2015\" src/seed-element.js -w -o seed-element.js"
+  },
+  "keywords": [
+    "polymer",
+    "web components",
+    "ES2015",
+    "ES6"
+  ],
+  "author": "Maurizio Mangione",
+  "devDependencies": {
+    "babel-cli": "^6.3.15",
+    "babel-preset-es2015": "^6.3.13",
+    "parallelshell": "^2.0.0"
+  }
+}
